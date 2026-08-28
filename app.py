@@ -155,7 +155,7 @@ st.markdown(
 
 with st.form("risk_form", clear_on_submit=False):
     st.subheader("Financial profile")
-    st.markdown('<div class="section-note">Enter annual amounts in the same currency used during model training.</div>', unsafe_allow_html=True)
+    st.markdown('<div class="section-note">Enter all financial amounts in the same currency (for example, INR).</div>', unsafe_allow_html=True)
     c1, c2, c3, c4 = st.columns(4)
     income = c1.number_input("Annual income", min_value=0.0, value=None, step=10000.0, placeholder="e.g. 180000")
     credit = c2.number_input("Credit amount", min_value=0.0, value=None, step=10000.0, placeholder="e.g. 500000")
